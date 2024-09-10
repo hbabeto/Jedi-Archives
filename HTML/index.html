@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="CSS/style.css?9" />
+  </head>
+  <body>
+    
+    <div class="login-page">
+      <div class="form">       
+          <img  src="./IMAGENS/Sem_Título-10000-removebg.png"  class="logo" alt="Disney+ Logo">
+        <form class="register-form" action="CLASSE/Cadastrese.php">
+          <input type="text" name="cpf" id="cpf" placeholder="Cpf" required/>
+          <input type="text" name="nome" id="nome" placeholder="Nome" required/>
+          <input type="text" name="celular" id="celular" placeholder="Celular" required/>
+          <input type="text" name="email" id="email" placeholder="email" required/>
+          <input type="text" name="login" id="login" placeholder="Login" required/>
+          <input type="password" name="senha" id="senha" placeholder="Senha" required/>
+          <button>Criar</button>
+          <p class="message">Já tem um Login? <a href="#">Login</a></p>
+        </form>
+        <form class="login-form" action="CLASSE/Login.php">
+          <input type="text" name="login" placeholder="Login" required/>
+          <input type="password" name="senha" placeholder="Senha" required/>
+          <button>login</button>
+          <p class="message">
+            Não é Registrado? <a href="#">Crie uma conta</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: black;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #000000, #2a313f); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.logo img {
+    height: 70px;
+    width: 150px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    height: 40px;
+    width: 40px; 
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: #444;
+}
+
+.highlight {
+    background: url('../IMAGENS/star_wars_background.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlight h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.highlight p {
+    font-size: 18px;
+}
+
+.movies-section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 2000px;
+}
+
+.movies-section h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.movies-section ul {
+    list-style: none;
+   
+}
+
+.movies-section ul li {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.movies-section ul li a {
+    color: #00c8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.news-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 480px; 
+    margin-right: 110px;
+    margin-top: -300px;
+}
+
+.news-article {
+    flex-basis: calc(50% - 10px); 
+    padding: 10px;
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 480px) {
+    .news-article {
+        flex-basis: 100%; 
+    }
+}
+.movie-poster {
+    display: inline-block; 
+    width: 500px; 
+    text-align: center; 
+    margin: 10px; 
+}
+
+.movie-poster img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.movie-poster span {
+    display: block; 
+    margin-top: 5px; 
+}
+
+footer {
+    background: linear-gradient(to bottom, #000000, #2a313f);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 70px;
+    width: 150px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    display: inline;
+}
+
+.footer-links ul li:not(:last-child)::after {
+    content: "|";
+    margin: 0 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social ul li {
+    margin-left: 20px;
+}
+
+.footer-social ul li:first-child {
+    margin-left: 0;
+}
+
+.footer-social ul li a img {
+    height: 30px;
+    width: auto;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Star Jedi', sans-serif;
+    color: #ffc600;
+    margin: 20px; 
+}
+
+.post {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+form{
+    margin: 20px;
+}
+
+input[type="text"], textarea {
+    width: calc(70% - 22px); 
+    padding: 10px;
+    
+    border: 1px solid #ffc600;
+    border-radius: 5px;
+    background-color: rgba(255, 198, 0, 0.3);
+    color: #fff;
+    display: flex;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #ffc600;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffd53a;
+}
+
+#mensagem {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffc600;
+    color: #000;
+    border-radius: 5px;
+}
+
+#postagens {
+    margin-top: 20px;
+}
+
+#postagens .post {
+    border: 2px solid #ffc600;
+}
+
+#postagens h2 {
+    font-size: 24px;
+
+}
+
+#postagens p {
+    font-size: 16px;
+    margin-bottom: 10px; 
+}
+
+.forum{
+    max-width: 900px; 
+    margin: 20px auto 20px; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    text-align: justify; 
+    line-height: 1.6; 
+    font-family: 'Arial', sans-serif; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); 
+    overflow: hidden; 
+}
